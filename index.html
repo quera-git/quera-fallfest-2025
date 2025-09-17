@@ -11,7 +11,7 @@
   <meta property="og:description" content="양자 컴퓨팅을 함께 배우는 해커톤/세션. 지금 등록하세요!" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
-  <link rel="canonical" href="https://qicb-git.github.io/qicb-fallfest-2025/" />
+  <link rel="canonical" href="https://quera-git.github.io/quera-fallfest-2025/" />
   <meta name="theme-color" content="#0b0c10" />
   <script type="application/ld+json">
     {
@@ -49,27 +49,55 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <a href="#top" class="brand" aria-label="QuERA 홈으로">
+        <a href="#top" class="brand" aria-label="QuERA 홈으로" data-i18n-aria-label="brand.homeAria">
           <img class="brand-logo" src="assets/logo-qicb.png" alt="QuERA Logo" />
-          <span>QuERA Fall Fest 2025 @ PNU</span>
+          <span data-i18n="brand.name">QuERA Fall Fest 2025 @ PNU</span>
         </a>
       </div>
-      <button class="nav-toggle" type="button" aria-controls="primary-nav-menu" aria-expanded="false">
-        <span class="sr-only">주요 메뉴 열기</span>
-        <span class="nav-toggle-icon" aria-hidden="true"></span>
-      </button>
       <nav class="primary-nav" aria-label="Primary">
         <div id="primary-nav-menu" class="nav-menu" data-open="false" aria-hidden="true" tabindex="-1">
-          <a class="btn" href="#about" aria-current="page" ia-current="page">소개</a> <a class="btn"
-            href="#schedule">일정</a>
-          <a class="btn" href="#venue">장소</a>
-          <a class="btn" href="#faq">FAQ</a>
-          <a class="btn-primary" href="https://forms.gle/your-register-link" target="_blank" rel="noopener">
+          <a class="btn" href="#about" aria-current="page" ia-current="page" data-i18n="nav.about">소개</a>
+          <a class="btn" href="#schedule" data-i18n="nav.schedule">일정</a>
+          <a class="btn" href="#venue" data-i18n="nav.venue">장소</a>
+          <a class="btn" href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a class="btn-primary" href="https://forms.gle/your-register-link" target="_blank" rel="noopener"
+            data-i18n="nav.register">
             지금 등록하기
             <span aria-hidden="true">→</span>
           </a>
         </div>
       </nav>
+      <div class="nav-actions">
+        <div class="language-dropdown" data-open="false">
+          <button class="language-button" type="button" aria-haspopup="true" aria-expanded="false"
+            data-i18n-aria-label="language.button.aria">
+            <span class="language-flag" aria-hidden="true">🇰🇷</span>
+            <span class="language-code">KR</span>
+          </button>
+          <ul class="language-menu" role="menu" aria-label="언어 선택" data-i18n-aria-label="language.menu.aria"
+            aria-hidden="true">
+            <li role="none">
+              <button type="button" class="language-option" role="menuitemradio" aria-checked="true"
+                data-lang="ko">
+                <span class="language-flag" aria-hidden="true">🇰🇷</span>
+                <span class="language-name" data-i18n="language.option.ko">한국어 (KR)</span>
+              </button>
+            </li>
+            <li role="none">
+              <button type="button" class="language-option" role="menuitemradio" aria-checked="false"
+                data-lang="en">
+                <span class="language-flag" aria-hidden="true">🇺🇸</span>
+                <span class="language-name" data-i18n="language.option.en">영어 (EN)</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav-menu" aria-expanded="false"
+          aria-label="주요 메뉴 열기" data-i18n-aria-label="nav.toggle">
+          <span class="sr-only" data-i18n="nav.toggle">주요 메뉴 열기</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -83,12 +111,12 @@
             fetchpriority="high" />
           <div class="hero-copy">
             <h1>Qiskit Fall Fest 2025<br />PNU</h1>
-            <p class="sub">2025.11.21 (금) · 부산대학교</p>
+            <p class="sub" data-i18n="hero.date">2025.11.21 (금) · 부산대학교</p>
             <div class="kpis" style="margin-top:14px">
-              <span>⏱️ 세션 & 실습</span>
-              <span>🧪 Qiskit 핸즈온</span>
-              <span>🏆 미니 챌린지</span>
-              <span>👥 네트워킹</span>
+              <span data-i18n="hero.kpi.sessions">⏱️ 세션 & 실습</span>
+              <span data-i18n="hero.kpi.handsOn">🧪 Qiskit 핸즈온</span>
+              <span data-i18n="hero.kpi.challenge">🏆 미니 챌린지</span>
+              <span data-i18n="hero.kpi.networking">👥 네트워킹</span>
             </div>
           </div>
         </div>
@@ -98,18 +126,18 @@
     <!-- ABOUT -->
     <section id="about" class="anchor">
       <div class="container">
-        <h2>행사 소개</h2>
+        <h2 data-i18n="about.title">행사 소개</h2>
         <div class="panel">
-          <p>
+          <p data-i18n="about.description" data-i18n-type="html">
             <strong>Qiskit Fall Fest 2025 @ PNU</strong>는 <strong>QuERA(Quantum Education & Research Association)</strong>가
             주최하고,
             <strong> IBM Quantum</strong>의 글로벌 Fall Fest 프로그램의 일환으로 개최되는 행사입니다.
             양자 컴퓨팅을 처음 접하는 초보자들을 위한 자리이며, 강연·실습·네트워킹을 통해 양자 컴퓨팅을 배울 수 있는 기회를 제공합니다.
           </p>
           <ul class="list">
-            <li><strong>대상:</strong> 컴공/물리/수학 전공자 및 비전공자 모두</li>
-            <li><strong>준비물:</strong> 노트북, GitHub 계정, 기본 Python 환경</li>
-            <li><strong>난이도:</strong> 입문~초급 (사전 자료 제공)</li>
+            <li data-i18n="about.audience" data-i18n-type="html"><strong>대상:</strong> 컴공/물리/수학 전공자 및 비전공자 모두</li>
+            <li data-i18n="about.requirements" data-i18n-type="html"><strong>준비물:</strong> 노트북, GitHub 계정, 기본 Python 환경</li>
+            <li data-i18n="about.level" data-i18n-type="html"><strong>난이도:</strong> 입문~초급 (사전 자료 제공)</li>
           </ul>
         </div>
       </div>
@@ -118,33 +146,33 @@
     <!-- SCHEDULE -->
     <section id="schedule" class="anchor">
       <div class="container">
-        <h2>일정(안)</h2>
+        <h2 data-i18n="schedule.title">일정(안)</h2>
         <div class="grid cols-2">
           <div class="panel">
             <span class="tag">Part 1</span>
-            <h3 style="margin:8px 0 6px">Hands-on & Mini Hack</h3>
+            <h3 style="margin:8px 0 6px" data-i18n="schedule.part1.title">Hands-on & Mini Hack</h3>
             <ul class="list">
-              <li>10:00 - 10:30 · Fall Fest Opening</li>
-              <li>10:30 - 11:30 · 스피커 초청 연사</li>
-              <li>13:00 - 14:00 · Qiskit Fundamental Lab</li>
-              <li>14:00 - 16:00 · Mini Hack</li>
+              <li data-i18n="schedule.part1.item1">10:00 - 10:30 · Fall Fest Opening</li>
+              <li data-i18n="schedule.part1.item2">10:30 - 11:30 · 스피커 초청 연사</li>
+              <li data-i18n="schedule.part1.item3">13:00 - 14:00 · Qiskit Fundamental Lab</li>
+              <li data-i18n="schedule.part1.item4">14:00 - 16:00 · Mini Hack</li>
             </ul>
           </div>
           <div class="panel">
             <span class="tag">Part 2</span>
-            <h3 style="margin:8px 0 6px">Workshop</h3>
+            <h3 style="margin:8px 0 6px" data-i18n="schedule.part2.title">Workshop</h3>
             <ul class="list">
-              <li>16:00 - 17:00 · 워크숍 1</li>
-              <li>17:00 - 18:00 · 워크숍 2</li>
-              <li>18:00 - 18:30 · Fall Fest Closing</li>
+              <li data-i18n="schedule.part2.item1">16:00 - 17:00 · 워크숍 1</li>
+              <li data-i18n="schedule.part2.item2">17:00 - 18:00 · 워크숍 2</li>
+              <li data-i18n="schedule.part2.item3">18:00 - 18:30 · Fall Fest Closing</li>
             </ul>
           </div>
         </div>
         <div class="center" style="margin-top:14px">
-          <a class="btn-primary" href="https://forms.gle/your-register-link" target="_blank" rel="noopener">사전 등록하기</a>
+          <a class="btn-primary" href="https://forms.gle/your-register-link" target="_blank" rel="noopener" data-i18n="cta.preregister">사전 등록하기</a>
           <a class="btn-ghost"
             href="https://resilient-tilapia-077.notion.site/Qiskit-Fall-Fest-2025-PNU-25ac026b5ea48028b5abc79156f12cba?source=copy_link"
-            target="_blank" rel="noopener">상세 안내(노션)</a>
+            target="_blank" rel="noopener" data-i18n="cta.moreInfo">상세 안내(노션)</a>
         </div>
       </div>
     </section>
@@ -152,10 +180,10 @@
     <!-- VENUE -->
     <section id="venue" class="anchor">
       <div class="container">
-        <h2>장소</h2>
+        <h2 data-i18n="venue.title">장소</h2>
         <div class="panel">
-          <p><strong>부산대학교 제6공학관(컴퓨터공학관)</strong><br />부산광역시 금정구 부산대학로63번길 2 (장전동)</p>
-          <p class="muted">세부 호실/입장 동선은 행사 전 참가자 안내 메일로 공지됩니다.</p>
+          <p data-i18n="venue.address" data-i18n-type="html"><strong>부산대학교 제6공학관(컴퓨터공학관)</strong><br />부산광역시 금정구 부산대학로63번길 2 (장전동)</p>
+          <p class="muted" data-i18n="venue.note">세부 호실/입장 동선은 행사 전 참가자 안내 메일로 공지됩니다.</p>
         </div>
       </div>
     </section>
@@ -163,23 +191,23 @@
     <!-- FAQ -->
     <section id="faq" class="anchor">
       <div class="container">
-        <h2>FAQ</h2>
+        <h2 data-i18n="faq.title">FAQ</h2>
         <div class="grid cols-2">
           <div class="panel">
-            <strong>비전공자도 참여 가능한가요?</strong>
-            <p class="muted">네. 사전 자료를 제공하고, 실습은 튜터가 함께 돕습니다.</p>
+            <strong data-i18n="faq.q1">비전공자도 참여 가능한가요?</strong>
+            <p class="muted" data-i18n="faq.a1">네. 사전 자료를 제공하고, 실습은 튜터가 함께 돕습니다.</p>
           </div>
           <div class="panel">
-            <strong>참가비가 있나요?</strong>
-            <p class="muted">무료입니다. 사전 등록만 해주세요.</p>
+            <strong data-i18n="faq.q2">참가비가 있나요?</strong>
+            <p class="muted" data-i18n="faq.a2">무료입니다. 사전 등록만 해주세요.</p>
           </div>
           <div class="panel">
-            <strong>무엇을 설치해야 하나요?</strong>
-            <p class="muted">Python 3.10+과 최신 Qiskit. 자세한 가이드는 노션 페이지에서 안내합니다.</p>
+            <strong data-i18n="faq.q3">무엇을 설치해야 하나요?</strong>
+            <p class="muted" data-i18n="faq.a3">Python 3.10+과 최신 Qiskit. 자세한 가이드는 노션 페이지에서 안내합니다.</p>
           </div>
           <div class="panel">
-            <strong>팀을 미리 구성해야 하나요?</strong>
-            <p class="muted">필수는 아니며, 현장에서도 매칭을 도와드립니다.</p>
+            <strong data-i18n="faq.q4">팀을 미리 구성해야 하나요?</strong>
+            <p class="muted" data-i18n="faq.a4">필수는 아니며, 현장에서도 매칭을 도와드립니다.</p>
           </div>
         </div>
       </div>
@@ -188,14 +216,14 @@
 
   <footer>
     <div class="container center" style="justify-content:space-between;flex-wrap:wrap">
-      <div>© 2025 QuERA · Quantum Information Club in Busan</div>
+      <div data-i18n="footer.copy">© 2025 QuERA · Quantum Information Club in Busan</div>
       <div class="center" style="gap:8px">
-        <a class="btn" href="mailto:sjunh027@pusan.ac.kr">이메일 문의</a>
-        <a class="btn" href="https://github.com/qicb-git/qicb-fallfest-2025" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:sjunh027@pusan.ac.kr" data-i18n="footer.email">이메일 문의</a>
+        <a class="btn" href="https://github.com/quera-git/quera-fallfest-2025" target="_blank" rel="noopener" data-i18n="footer.github">GitHub</a>
       </div>
     </div>
   </footer>
-  <button id="scrollTopBtn" aria-label="맨 위로 이동">
+  <button id="scrollTopBtn" aria-label="맨 위로 이동" data-i18n-aria-label="scrollTop.aria">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M12 19V5M5 12l7-7 7 7" />
