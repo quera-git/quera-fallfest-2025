@@ -7,8 +7,8 @@ const LANGUAGE_OPTIONS = {
 
 const translations = {
   ko: {
-    'brand.name': 'QICB Fall Fest 2025 @ PNU',
-    'brand.homeAria': 'QICB 홈으로',
+    'brand.name': 'QuERA Fall Fest 2025 @ PNU',
+    'brand.homeAria': 'QuERA 홈으로',
     'nav.about': '소개',
     'nav.schedule': '일정',
     'nav.venue': '장소',
@@ -22,7 +22,7 @@ const translations = {
     'hero.kpi.networking': '👥 네트워킹',
     'about.title': '행사 소개',
     'about.description':
-      '<strong>Qiskit Fall Fest 2025 @ PNU</strong>는 <strong>QICB(Quantum Information Club in Busan)</strong>가 주최하고, <strong>IBM Quantum</strong>의 글로벌 Fall Fest 프로그램의 일환으로 개최되는 행사입니다. 양자 컴퓨팅을 처음 접하는 초보자들을 위한 자리이며, 강연·실습·네트워킹을 통해 양자 컴퓨팅을 배울 수 있는 기회를 제공합니다.',
+      '<strong>Qiskit Fall Fest 2025 @ PNU</strong>는 <strong>QuERA(Quantum Education & Research Association)</strong>가 주최하고, <strong>IBM Quantum</strong>의 글로벌 Fall Fest 프로그램의 일환으로 개최되는 행사입니다. 양자 컴퓨팅을 처음 접하는 초보자들을 위한 자리이며, 강연·실습·네트워킹을 통해 양자 컴퓨팅을 배울 수 있는 기회를 제공합니다.',
     'about.audience': '<strong>대상:</strong> 컴공/물리/수학 전공자 및 비전공자 모두',
     'about.requirements': '<strong>준비물:</strong> 노트북, GitHub 계정, 기본 Python 환경',
     'about.level': '<strong>난이도:</strong> 입문~초급 (사전 자료 제공)',
@@ -51,7 +51,7 @@ const translations = {
     'faq.a3': 'Python 3.10+과 최신 Qiskit. 자세한 가이드는 노션 페이지에서 안내합니다.',
     'faq.q4': '팀을 미리 구성해야 하나요?',
     'faq.a4': '필수는 아니며, 현장에서도 매칭을 도와드립니다.',
-    'footer.copy': '© 2025 QICB · Quantum Information Club in Busan',
+    'footer.copy': '© 2025 QuERA · Quantum Education & Research Association',
     'footer.email': '이메일 문의',
     'footer.github': 'GitHub',
     'scrollTop.aria': '맨 위로 이동',
@@ -59,15 +59,15 @@ const translations = {
     'language.menu.aria': '언어 선택',
     'language.option.ko': '한국어 (KR)',
     'language.option.en': '영어 (EN)',
-    'meta.title': 'QICB Fall Fest 2025 | 부산',
-    'meta.description': 'QICB가 주최하는 Qiskit Fall Fest 2025 - 부산. 해커톤·세미나·워크숍을 통해 양자 컴퓨팅을 함께 배웁니다.',
-    'meta.ogTitle': 'QICB Fall Fest 2025 | 부산',
+    'meta.title': 'Qiskit Fall Fest 2025 | 부산',
+    'meta.description': 'QuERA가 주최하는 Qiskit Fall Fest 2025 - 부산. 해커톤·세미나·워크숍을 통해 양자 컴퓨팅을 함께 배웁니다.',
+    'meta.ogTitle': 'Qiskit Fall Fest 2025 | 부산',
     'meta.ogDescription': '양자 컴퓨팅을 함께 배우는 해커톤/세션. 지금 등록하세요!',
     'meta.ogLocale': 'ko_KR'
   },
   en: {
-    'brand.name': 'QICB Fall Fest 2025 @ PNU',
-    'brand.homeAria': 'Go to QICB home',
+    'brand.name': 'Qiskit Fall Fest 2025 @ PNU',
+    'brand.homeAria': 'Go to QuERA home',
     'nav.about': 'About',
     'nav.schedule': 'Schedule',
     'nav.venue': 'Venue',
@@ -81,7 +81,7 @@ const translations = {
     'hero.kpi.networking': '👥 Networking',
     'about.title': 'About the Event',
     'about.description':
-      '<strong>Qiskit Fall Fest 2025 @ PNU</strong> is hosted by <strong>QICB (Quantum Information Club in Busan)</strong> as part of the global Fall Fest program by <strong>IBM Quantum</strong>. It welcomes newcomers to quantum computing and offers talks, hands-on labs, and networking opportunities to learn together.',
+      '<strong>Qiskit Fall Fest 2025 @ PNU</strong> is hosted by <strong>QuERA (Quantum Education & Research Association)</strong> as part of the global Fall Fest program by <strong>IBM Quantum</strong>. It welcomes newcomers to quantum computing and offers talks, hands-on labs, and networking opportunities to learn together.',
     'about.audience': '<strong>Who:</strong> Students and enthusiasts across CS, physics, math, and beyond',
     'about.requirements': '<strong>What to bring:</strong> Laptop, GitHub account, basic Python setup',
     'about.level': '<strong>Level:</strong> Beginner–intro (prep materials provided)',
@@ -110,7 +110,7 @@ const translations = {
     'faq.a3': 'Install Python 3.10+ and the latest Qiskit. Detailed setup guides are on the Notion page.',
     'faq.q4': 'Do I need a team beforehand?',
     'faq.a4': 'Teams are optional—we can help you form one on-site.',
-    'footer.copy': '© 2025 QICB · Quantum Information Club in Busan',
+    'footer.copy': '© 2025 QuERA · Quantum Education & Research Association',
     'footer.email': 'Email us',
     'footer.github': 'GitHub',
     'scrollTop.aria': 'Back to top',
@@ -118,9 +118,9 @@ const translations = {
     'language.menu.aria': 'Select language',
     'language.option.ko': 'Korean (KR)',
     'language.option.en': 'English (EN)',
-    'meta.title': 'QICB Fall Fest 2025 | Busan',
-    'meta.description': 'Join the Qiskit Fall Fest 2025 in Busan hosted by QICB with hackathons, talks, and workshops to learn quantum computing.',
-    'meta.ogTitle': 'QICB Fall Fest 2025 | Busan',
+    'meta.title': 'Qiskit Fall Fest 2025 | Busan',
+    'meta.description': 'Join the Qiskit Fall Fest 2025 in Busan hosted by QuERA with hackathons, talks, and workshops to learn quantum computing.',
+    'meta.ogTitle': 'Qiskit Fall Fest 2025 | Busan',
     'meta.ogDescription': 'Learn quantum computing together through sessions, hands-on labs, and networking—register now!',
     'meta.ogLocale': 'en_US'
   }
