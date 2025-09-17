@@ -38,3 +38,7 @@
 </td>
 </tr>
 </table>
+
+## 🌐링크
+
+[![Qiskit Fall Fest 2025 @ PNU](https://img.shields.io/badge/Visit-Qiskit%20Fall%20Fest%202025%20@%20PNU-7050ef?style=for-the-badge&logo=github&logoColor=white)](https://quera-git.github.io/quera-fallfest-2025/)
