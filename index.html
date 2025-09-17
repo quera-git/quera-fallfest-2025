@@ -26,15 +26,21 @@
         <img class="brand-logo" src="assets/logo-qicb.png" alt="QICB Logo" />
         <span>QICB Fall Fest 2025 @ PNU</span>
       </div>
-      <nav class="center" aria-label="Primary">
-        <a class="btn" href="#about">소개</a>
-        <a class="btn" href="#schedule">일정</a>
-        <a class="btn" href="#venue">장소</a>
-        <a class="btn" href="#faq">FAQ</a>
-        <a class="btn-primary" href="https://forms.gle/your-register-link" target="_blank" rel="noopener">
-          지금 등록하기
-          <span aria-hidden="true">→</span>
-        </a>
+      <button class="nav-toggle" type="button" aria-controls="primary-nav-menu" aria-expanded="false">
+        <span class="sr-only">주요 메뉴 열기</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="primary-nav" aria-label="Primary">
+        <div id="primary-nav-menu" class="nav-menu" data-open="false" aria-hidden="true" tabindex="-1">
+          <a class="btn" href="#about">소개</a>
+          <a class="btn" href="#schedule">일정</a>
+          <a class="btn" href="#venue">장소</a>
+          <a class="btn" href="#faq">FAQ</a>
+          <a class="btn-primary" href="https://forms.gle/your-register-link" target="_blank" rel="noopener">
+            지금 등록하기
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
       </nav>
     </div>
   </header>
