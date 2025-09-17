@@ -31,7 +31,6 @@ const setupNavMenu = () => {
 
   const focusableSelectors =
     'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"]), select, textarea, input';
-  let originalBodyOverflow = document.body.style.overflow || '';
 
   const getFocusableItems = () =>
     Array.from(navMenu.querySelectorAll(focusableSelectors)).filter((element) => {
@@ -47,7 +46,6 @@ const setupNavMenu = () => {
     navMenu.setAttribute('aria-hidden', 'true');
     navToggle.setAttribute('aria-expanded', 'false');
     navToggle.classList.remove('is-open');
-    document.body.style.overflow = originalBodyOverflow;
     document.removeEventListener('keydown', handleKeydown);
 
     if (returnFocus) {
@@ -100,12 +98,10 @@ const setupNavMenu = () => {
       return;
     }
 
-    originalBodyOverflow = document.body.style.overflow || '';
     navMenu.setAttribute('data-open', 'true');
     navMenu.setAttribute('aria-hidden', 'false');
     navToggle.setAttribute('aria-expanded', 'true');
     navToggle.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
     document.addEventListener('keydown', handleKeydown);
 
     const focusable = getFocusableItems();
@@ -127,13 +123,19 @@ const setupNavMenu = () => {
     }
   });
 
-  navMenu.querySelectorAll('a[href]').forEach((link) => {
-    link.addEventListener('click', () => {
-      if (navMenu.getAttribute('data-open') === 'true') {
-        closeMenu();
-      }
-    });
-  });
+  const handlePointerDownOutside = (event) => {
+    if (navMenu.getAttribute('data-open') !== 'true') {
+      return;
+    }
+
+    if (navMenu.contains(event.target) || navToggle.contains(event.target)) {
+      return;
+    }
+
+    closeMenu({ returnFocus: false });
+  };
+
+  document.addEventListener('pointerdown', handlePointerDownOutside);
 
   const mediaQuery = window.matchMedia('(min-width: 880px)');
 

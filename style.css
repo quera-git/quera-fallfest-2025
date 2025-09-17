@@ -311,30 +311,37 @@ h1 {
 }
 
 @media (max-width: 879px) {
+  .nav {
+    position: relative;
+  }
+
   .nav-toggle {
     display: inline-flex;
   }
 
   .nav-menu {
-    position: fixed;
-    inset: 0;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
     z-index: 20;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: calc(96px + env(safe-area-inset-top, 0px)) 24px
-      calc(24px + env(safe-area-inset-bottom, 0px));
-    background: rgba(11, 12, 16, 0.94);
+    align-items: stretch;
+    width: min(280px, calc(100vw - 40px));
+    padding: 18px;
+    background: rgba(11, 12, 16, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
     backdrop-filter: blur(18px);
-    gap: 18px;
+    gap: 16px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-12px);
-    transition: opacity 0.28s ease, transform 0.28s ease;
+    transform: translateY(-8px);
+    transition: opacity 0.24s ease, transform 0.24s ease;
     overflow-y: auto;
-    height: 100dvh;
+    max-height: calc(100dvh - 120px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   }
 
   .nav-menu[data-open='true'] {
@@ -480,7 +487,7 @@ footer {
     width: 132px;
     height: 132px;
   }
-
+}
 /* 버튼 호버 시 살짝 밝아지는 효과 */
 .btn:hover, .btn-primary:hover, .btn-ghost:hover {
     filter: brightness(1.15);
@@ -496,9 +503,6 @@ footer {
 
 #scrollTopBtn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  /* iOS 노치 등 하단 UI를 피하기 위한 안전 영역 추가 */
   bottom: calc(20px + env(safe-area-inset-bottom));
   right: calc(20px + env(safe-area-inset-right));
 
@@ -532,5 +536,4 @@ footer {
 
 #scrollTopBtn:hover {
   filter: brightness(1.1);
-}
 }
