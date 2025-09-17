@@ -516,7 +516,7 @@ footer {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--brand);
+  background: linear-gradient(135deg, var(--brand), var(--brand-2)); /* 그라데이션으로 변경 */
   color: white;
   border: none;
   cursor: pointer;
