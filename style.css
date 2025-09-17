@@ -290,4 +290,17 @@ footer {
     width: 132px;
     height: 132px;
   }
+
+/* 버튼 호버 시 살짝 밝아지는 효과 */
+.btn:hover, .btn-primary:hover, .btn-ghost:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px); /* 살짝 떠오르는 느낌 */
+    transition: all .2s ease; /* 부드러운 전환 효과 */
+}
+
+/* 패널(카드) 호버 시 테두리 색상 강조 */
+.panel:hover {
+    border-color: rgba(99, 102, 241, .4);
+    transition: border-color .2s ease;
+}
 }
