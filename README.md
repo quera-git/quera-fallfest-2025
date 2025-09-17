@@ -1,7 +1,9 @@
 #
 
 <div align="center">
-<img src="assets/Badge.svg" width="80 alt=""/>
+<img src="assets/Badge.svg" width="160 alt=""/>
+</br>
+</br>
 </div>
 
 # <div align="center">Qiskit Fall Fest 2025 @ PNU</div>
