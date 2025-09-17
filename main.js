@@ -1,18 +1,20 @@
 const enableSmoothScroll = () => {
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    const targetId = link.getAttribute('href');
-
-    if (!targetId || targetId.length <= 1) {
-      return;
-    }
-
     link.addEventListener('click', (event) => {
-      const target = document.querySelector(targetId);
+      const targetId = link.getAttribute('href');
 
+      // href="#" 일 경우, 최상단으로 스크롤
+      if (targetId === '#') {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      
+      const target = document.querySelector(targetId);
       if (!target) {
         return;
       }
-
+      
       event.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
     });
@@ -149,7 +151,32 @@ const setupNavMenu = () => {
   });
 };
 
+const setupScrollTopButton = () => {
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  if (!scrollTopBtn) {
+    return; // 버튼이 없으면 함수 종료
+  }
+
+  // 스크롤 위치에 따라 버튼 보이기/숨기기
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.classList.add('show');
+    } else {
+      scrollTopBtn.classList.remove('show');
+    }
+  });
+
+  // 버튼 클릭 시 최상단으로 부드럽게 이동
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   enableSmoothScroll();
   setupNavMenu();
+  setupScrollTopButton(); // ✨ 이 줄을 추가합니다.
 });

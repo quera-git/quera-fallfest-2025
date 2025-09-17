@@ -23,8 +23,10 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <img class="brand-logo" src="assets/logo-qicb.png" alt="QICB Logo" loading="lazy" decoding="async" />
-        <span>QICB Fall Fest 2025 @ PNU</span>
+        <a href="#top" class="brand" aria-label="QICB 홈으로">
+          <img class="brand-logo" src="assets/logo-qicb.png" alt="QICB Logo" />
+          <span>QICB Fall Fest 2025 @ PNU</span>
+        </a>
       </div>
       <button class="nav-toggle" type="button" aria-controls="primary-nav-menu" aria-expanded="false">
         <span class="sr-only">주요 메뉴 열기</span>
@@ -32,7 +34,8 @@
       </button>
       <nav class="primary-nav" aria-label="Primary">
         <div id="primary-nav-menu" class="nav-menu" data-open="false" aria-hidden="true" tabindex="-1">
-          <a class="btn" href="#about" aria-current="page" ia-current="page">소개</a>          <a class="btn" href="#schedule">일정</a>
+          <a class="btn" href="#about" aria-current="page" ia-current="page">소개</a> <a class="btn"
+            href="#schedule">일정</a>
           <a class="btn" href="#venue">장소</a>
           <a class="btn" href="#faq">FAQ</a>
           <a class="btn-primary" href="https://forms.gle/your-register-link" target="_blank" rel="noopener">
@@ -166,6 +169,12 @@
       </div>
     </div>
   </footer>
+  <button id="scrollTopBtn" aria-label="맨 위로 이동">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
   <script src="main.js" defer></script>
 </body>
 
