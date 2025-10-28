@@ -3,5 +3,3 @@ Allow: /
 
 Sitemap: https://quera-git.github.io/quera-fallfest-2025/sitemap.xml
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
